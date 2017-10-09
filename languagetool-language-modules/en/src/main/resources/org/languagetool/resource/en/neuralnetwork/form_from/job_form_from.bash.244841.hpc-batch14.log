@@ -1,0 +1,131 @@
+Sun Sep 17 17:16:04 CEST 2017 create_training_files
+/tmp/eng_news_2015_3M-sentences-raw.txt_small
+300000 lines
+774 form
+25752 from
+/tmp/form_from
+43252 lines
+3356 form
+40200 from
+/tmp/form_from_training
+34602 lines
+2687 form
+32161 from
+/tmp/form_from_validate
+8650 lines
+669 form
+8039 from
+generate /tmp/form_from_training.py, /tmp/form_from_validate.py
+Sun Sep 17 17:16:29 CEST 2017 create_classifier
+{'epochs': 1000, 'use_flex_hidden_layer': False, 'num_outputs': 2, 'batch_size': 1000, 'self': <__main__.NeuralNetwork object at 0x2b8aab8baa90>, 'num_inputs': 4, 'dictionary_path': 'res_training/eng/embedding/dictionary.txt', 'embedding_path': 'res_training/eng/embedding/final_embeddings.txt', 'training_data_file': '/tmp/form_from_training.py'}
+embedding shape (42122, 64)
+/tmp/form_from_training.py loaded, containing 5260 entries, class distribution: [2630 2630]
+Steps: 5000, 5 steps in 1000 epochs
+epoch 0, training accuracy 0.578707
+epoch 10, training accuracy 0.621673
+epoch 20, training accuracy 0.665399
+epoch 30, training accuracy 0.700570
+epoch 40, training accuracy 0.730038
+epoch 50, training accuracy 0.755703
+epoch 60, training accuracy 0.780228
+epoch 70, training accuracy 0.795627
+epoch 80, training accuracy 0.810836
+epoch 90, training accuracy 0.824335
+epoch 100, training accuracy 0.834981
+epoch 110, training accuracy 0.847338
+epoch 120, training accuracy 0.856274
+epoch 130, training accuracy 0.864068
+epoch 140, training accuracy 0.869582
+epoch 150, training accuracy 0.875665
+epoch 160, training accuracy 0.880989
+epoch 170, training accuracy 0.885741
+epoch 180, training accuracy 0.891445
+epoch 190, training accuracy 0.893726
+epoch 200, training accuracy 0.896388
+epoch 210, training accuracy 0.899240
+epoch 220, training accuracy 0.902471
+epoch 230, training accuracy 0.904753
+epoch 240, training accuracy 0.907034
+epoch 250, training accuracy 0.909696
+epoch 260, training accuracy 0.911597
+epoch 270, training accuracy 0.912928
+epoch 280, training accuracy 0.915019
+epoch 290, training accuracy 0.917300
+epoch 300, training accuracy 0.918631
+epoch 310, training accuracy 0.919772
+epoch 320, training accuracy 0.921863
+epoch 330, training accuracy 0.923574
+epoch 340, training accuracy 0.925095
+epoch 350, training accuracy 0.925475
+epoch 360, training accuracy 0.927567
+epoch 370, training accuracy 0.928707
+epoch 380, training accuracy 0.930038
+epoch 390, training accuracy 0.930608
+epoch 400, training accuracy 0.931179
+epoch 410, training accuracy 0.931559
+epoch 420, training accuracy 0.931939
+epoch 430, training accuracy 0.932129
+epoch 440, training accuracy 0.933460
+epoch 450, training accuracy 0.934411
+epoch 460, training accuracy 0.935171
+epoch 470, training accuracy 0.935932
+epoch 480, training accuracy 0.936312
+epoch 490, training accuracy 0.937262
+epoch 500, training accuracy 0.938023
+epoch 510, training accuracy 0.938403
+epoch 520, training accuracy 0.939164
+epoch 530, training accuracy 0.939734
+epoch 540, training accuracy 0.940114
+epoch 550, training accuracy 0.940875
+epoch 560, training accuracy 0.941445
+epoch 570, training accuracy 0.941445
+epoch 580, training accuracy 0.941445
+epoch 590, training accuracy 0.942015
+epoch 600, training accuracy 0.942205
+epoch 610, training accuracy 0.942966
+epoch 620, training accuracy 0.942776
+epoch 630, training accuracy 0.942586
+epoch 640, training accuracy 0.942776
+epoch 650, training accuracy 0.942966
+epoch 660, training accuracy 0.943346
+epoch 670, training accuracy 0.943726
+epoch 680, training accuracy 0.944106
+epoch 690, training accuracy 0.944867
+epoch 700, training accuracy 0.945057
+epoch 710, training accuracy 0.945247
+epoch 720, training accuracy 0.945437
+epoch 730, training accuracy 0.945437
+epoch 740, training accuracy 0.945247
+epoch 750, training accuracy 0.945437
+epoch 760, training accuracy 0.945437
+epoch 770, training accuracy 0.946198
+epoch 780, training accuracy 0.946768
+epoch 790, training accuracy 0.946958
+epoch 800, training accuracy 0.946958
+epoch 810, training accuracy 0.947529
+epoch 820, training accuracy 0.947909
+epoch 830, training accuracy 0.948479
+epoch 840, training accuracy 0.948479
+epoch 850, training accuracy 0.948669
+epoch 860, training accuracy 0.948669
+epoch 870, training accuracy 0.949430
+epoch 880, training accuracy 0.949430
+epoch 890, training accuracy 0.949810
+epoch 900, training accuracy 0.949810
+epoch 910, training accuracy 0.949810
+epoch 920, training accuracy 0.949810
+epoch 930, training accuracy 0.950000
+epoch 940, training accuracy 0.950000
+epoch 950, training accuracy 0.950380
+epoch 960, training accuracy 0.950760
+epoch 970, training accuracy 0.950570
+epoch 980, training accuracy 0.950760
+epoch 990, training accuracy 0.951331
+epoch 1000, training accuracy 0.951331
+/tmp/form_from_validate.py loaded, containing 1314 entries, class distribution: [657 657]
+correct: [558, 557]
+incorrect: [19, 4]
+accuracy: [0.9670710571923743, 0.9928698752228164]
+unclassified: [80, 96]
+total accuracy: [0.8493150684931506, 0.84779299847793]
+Sun Sep 17 17:16:57 CEST 2017 finished, res_training/eng/form_from

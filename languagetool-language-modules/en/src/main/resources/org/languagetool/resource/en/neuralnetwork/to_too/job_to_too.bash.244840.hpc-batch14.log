@@ -1,0 +1,131 @@
+Sun Sep 17 17:15:33 CEST 2017 create_training_files
+/tmp/eng_news_2015_3M-sentences-raw.txt_small
+300000 lines
+127932 to
+2783 too
+/tmp/to_too
+51834 lines
+45524 to
+12236 too
+/tmp/to_too_training
+41468 lines
+36424 to
+9774 too
+/tmp/to_too_validate
+10366 lines
+9100 to
+2462 too
+generate /tmp/to_too_training.py, /tmp/to_too_validate.py
+Sun Sep 17 17:16:02 CEST 2017 create_classifier
+{'batch_size': 1000, 'self': <__main__.NeuralNetwork object at 0x2ae70b2d7a58>, 'num_outputs': 2, 'use_flex_hidden_layer': False, 'training_data_file': '/tmp/to_too_training.py', 'num_inputs': 4, 'epochs': 1000, 'embedding_path': 'res_training/eng/embedding/final_embeddings.txt', 'dictionary_path': 'res_training/eng/embedding/dictionary.txt'}
+embedding shape (42122, 64)
+/tmp/to_too_training.py loaded, containing 20176 entries, class distribution: [10088 10088]
+Steps: 20000, 20 steps in 1000 epochs
+epoch 0, training accuracy 0.459903
+epoch 10, training accuracy 0.666088
+epoch 20, training accuracy 0.784645
+epoch 30, training accuracy 0.848731
+epoch 40, training accuracy 0.885061
+epoch 50, training accuracy 0.906423
+epoch 60, training accuracy 0.920351
+epoch 70, training accuracy 0.929520
+epoch 80, training accuracy 0.936261
+epoch 90, training accuracy 0.941416
+epoch 100, training accuracy 0.945430
+epoch 110, training accuracy 0.949395
+epoch 120, training accuracy 0.953162
+epoch 130, training accuracy 0.955492
+epoch 140, training accuracy 0.957375
+epoch 150, training accuracy 0.959754
+epoch 160, training accuracy 0.961638
+epoch 170, training accuracy 0.963224
+epoch 180, training accuracy 0.964711
+epoch 190, training accuracy 0.966197
+epoch 200, training accuracy 0.967139
+epoch 210, training accuracy 0.967982
+epoch 220, training accuracy 0.968824
+epoch 230, training accuracy 0.969915
+epoch 240, training accuracy 0.970906
+epoch 250, training accuracy 0.971848
+epoch 260, training accuracy 0.972591
+epoch 270, training accuracy 0.973582
+epoch 280, training accuracy 0.974177
+epoch 290, training accuracy 0.974921
+epoch 300, training accuracy 0.975317
+epoch 310, training accuracy 0.975813
+epoch 320, training accuracy 0.976110
+epoch 330, training accuracy 0.977002
+epoch 340, training accuracy 0.977895
+epoch 350, training accuracy 0.978043
+epoch 360, training accuracy 0.978291
+epoch 370, training accuracy 0.978539
+epoch 380, training accuracy 0.978787
+epoch 390, training accuracy 0.978836
+epoch 400, training accuracy 0.979183
+epoch 410, training accuracy 0.979580
+epoch 420, training accuracy 0.980026
+epoch 430, training accuracy 0.980274
+epoch 440, training accuracy 0.980621
+epoch 450, training accuracy 0.980967
+epoch 460, training accuracy 0.981314
+epoch 470, training accuracy 0.981562
+epoch 480, training accuracy 0.981661
+epoch 490, training accuracy 0.981761
+epoch 500, training accuracy 0.982008
+epoch 510, training accuracy 0.982157
+epoch 520, training accuracy 0.982504
+epoch 530, training accuracy 0.982702
+epoch 540, training accuracy 0.982752
+epoch 550, training accuracy 0.982801
+epoch 560, training accuracy 0.983000
+epoch 570, training accuracy 0.983148
+epoch 580, training accuracy 0.983148
+epoch 590, training accuracy 0.983148
+epoch 600, training accuracy 0.983198
+epoch 610, training accuracy 0.983347
+epoch 620, training accuracy 0.983396
+epoch 630, training accuracy 0.983446
+epoch 640, training accuracy 0.983545
+epoch 650, training accuracy 0.983644
+epoch 660, training accuracy 0.983644
+epoch 670, training accuracy 0.983743
+epoch 680, training accuracy 0.983892
+epoch 690, training accuracy 0.983991
+epoch 700, training accuracy 0.983941
+epoch 710, training accuracy 0.983941
+epoch 720, training accuracy 0.983991
+epoch 730, training accuracy 0.983941
+epoch 740, training accuracy 0.984140
+epoch 750, training accuracy 0.984189
+epoch 760, training accuracy 0.984189
+epoch 770, training accuracy 0.984239
+epoch 780, training accuracy 0.984239
+epoch 790, training accuracy 0.984338
+epoch 800, training accuracy 0.984487
+epoch 810, training accuracy 0.984536
+epoch 820, training accuracy 0.984586
+epoch 830, training accuracy 0.984536
+epoch 840, training accuracy 0.984586
+epoch 850, training accuracy 0.984685
+epoch 860, training accuracy 0.984734
+epoch 870, training accuracy 0.984833
+epoch 880, training accuracy 0.984784
+epoch 890, training accuracy 0.984833
+epoch 900, training accuracy 0.984833
+epoch 910, training accuracy 0.984833
+epoch 920, training accuracy 0.984784
+epoch 930, training accuracy 0.984833
+epoch 940, training accuracy 0.984933
+epoch 950, training accuracy 0.984883
+epoch 960, training accuracy 0.984883
+epoch 970, training accuracy 0.984933
+epoch 980, training accuracy 0.984833
+epoch 990, training accuracy 0.984784
+epoch 1000, training accuracy 0.984784
+/tmp/to_too_validate.py loaded, containing 5074 entries, class distribution: [2537 2537]
+correct: [2454, 2458]
+incorrect: [26, 21]
+accuracy: [0.989516129032258, 0.991528842275111]
+unclassified: [57, 58]
+total accuracy: [0.9672841939298384, 0.9688608592826172]
+Sun Sep 17 17:17:27 CEST 2017 finished, res_training/eng/to_too

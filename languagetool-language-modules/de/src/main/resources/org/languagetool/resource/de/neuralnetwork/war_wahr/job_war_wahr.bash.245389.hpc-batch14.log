@@ -1,0 +1,131 @@
+Sun Sep 17 18:11:18 CEST 2017 create_training_files
+/tmp/deu_news_2015_3M-sentences-raw.txt_small
+300000 lines
+11800 war
+143 wahr
+/tmp/war_wahr
+41161 lines
+40025 war
+1170 wahr
+/tmp/war_wahr_training
+32929 lines
+32009 war
+949 wahr
+/tmp/war_wahr_validate
+8232 lines
+8016 war
+221 wahr
+generate /tmp/war_wahr_training.py, /tmp/war_wahr_validate.py
+Sun Sep 17 18:11:40 CEST 2017 create_classifier
+{'embedding_path': 'res_training/deu/embedding/final_embeddings.txt', 'batch_size': 1000, 'use_flex_hidden_layer': False, 'epochs': 1000, 'num_outputs': 2, 'training_data_file': '/tmp/war_wahr_training.py', 'num_inputs': 4, 'dictionary_path': 'res_training/deu/embedding/dictionary.txt', 'self': <__main__.NeuralNetwork object at 0x2b68ef345a90>}
+embedding shape (52520, 64)
+/tmp/war_wahr_training.py loaded, containing 1894 entries, class distribution: [947 947]
+Steps: 1000, 1 steps in 1000 epochs
+epoch 0, training accuracy 0.519535
+epoch 10, training accuracy 0.535903
+epoch 20, training accuracy 0.561774
+epoch 30, training accuracy 0.579725
+epoch 40, training accuracy 0.597149
+epoch 50, training accuracy 0.608765
+epoch 60, training accuracy 0.623548
+epoch 70, training accuracy 0.638332
+epoch 80, training accuracy 0.652059
+epoch 90, training accuracy 0.661563
+epoch 100, training accuracy 0.667899
+epoch 110, training accuracy 0.680570
+epoch 120, training accuracy 0.692186
+epoch 130, training accuracy 0.701162
+epoch 140, training accuracy 0.708553
+epoch 150, training accuracy 0.715417
+epoch 160, training accuracy 0.728617
+epoch 170, training accuracy 0.733896
+epoch 180, training accuracy 0.737064
+epoch 190, training accuracy 0.742344
+epoch 200, training accuracy 0.749736
+epoch 210, training accuracy 0.755016
+epoch 220, training accuracy 0.760296
+epoch 230, training accuracy 0.765047
+epoch 240, training accuracy 0.767159
+epoch 250, training accuracy 0.772967
+epoch 260, training accuracy 0.775079
+epoch 270, training accuracy 0.780887
+epoch 280, training accuracy 0.784055
+epoch 290, training accuracy 0.787751
+epoch 300, training accuracy 0.790391
+epoch 310, training accuracy 0.794615
+epoch 320, training accuracy 0.799894
+epoch 330, training accuracy 0.802006
+epoch 340, training accuracy 0.804646
+epoch 350, training accuracy 0.806758
+epoch 360, training accuracy 0.809926
+epoch 370, training accuracy 0.810982
+epoch 380, training accuracy 0.813094
+epoch 390, training accuracy 0.815734
+epoch 400, training accuracy 0.818374
+epoch 410, training accuracy 0.822598
+epoch 420, training accuracy 0.824182
+epoch 430, training accuracy 0.826822
+epoch 440, training accuracy 0.829989
+epoch 450, training accuracy 0.830517
+epoch 460, training accuracy 0.832629
+epoch 470, training accuracy 0.834213
+epoch 480, training accuracy 0.834213
+epoch 490, training accuracy 0.834741
+epoch 500, training accuracy 0.836325
+epoch 510, training accuracy 0.839493
+epoch 520, training accuracy 0.838965
+epoch 530, training accuracy 0.839493
+epoch 540, training accuracy 0.840549
+epoch 550, training accuracy 0.843189
+epoch 560, training accuracy 0.845829
+epoch 570, training accuracy 0.846357
+epoch 580, training accuracy 0.847413
+epoch 590, training accuracy 0.849525
+epoch 600, training accuracy 0.852165
+epoch 610, training accuracy 0.855333
+epoch 620, training accuracy 0.856389
+epoch 630, training accuracy 0.858501
+epoch 640, training accuracy 0.859556
+epoch 650, training accuracy 0.859556
+epoch 660, training accuracy 0.860612
+epoch 670, training accuracy 0.861140
+epoch 680, training accuracy 0.862724
+epoch 690, training accuracy 0.864308
+epoch 700, training accuracy 0.865892
+epoch 710, training accuracy 0.866948
+epoch 720, training accuracy 0.869588
+epoch 730, training accuracy 0.869588
+epoch 740, training accuracy 0.869060
+epoch 750, training accuracy 0.870116
+epoch 760, training accuracy 0.870644
+epoch 770, training accuracy 0.871700
+epoch 780, training accuracy 0.872756
+epoch 790, training accuracy 0.873284
+epoch 800, training accuracy 0.875396
+epoch 810, training accuracy 0.875396
+epoch 820, training accuracy 0.876452
+epoch 830, training accuracy 0.879092
+epoch 840, training accuracy 0.880148
+epoch 850, training accuracy 0.881732
+epoch 860, training accuracy 0.881732
+epoch 870, training accuracy 0.882788
+epoch 880, training accuracy 0.883316
+epoch 890, training accuracy 0.884372
+epoch 900, training accuracy 0.885428
+epoch 910, training accuracy 0.885428
+epoch 920, training accuracy 0.885428
+epoch 930, training accuracy 0.884900
+epoch 940, training accuracy 0.885956
+epoch 950, training accuracy 0.886484
+epoch 960, training accuracy 0.887012
+epoch 970, training accuracy 0.885956
+epoch 980, training accuracy 0.887540
+epoch 990, training accuracy 0.888068
+epoch 1000, training accuracy 0.888596
+/tmp/war_wahr_validate.py loaded, containing 444 entries, class distribution: [222 222]
+correct: [128, 124]
+incorrect: [4, 7]
+accuracy: [0.9696969696969697, 0.9465648854961832]
+unclassified: [90, 91]
+total accuracy: [0.5765765765765766, 0.5585585585585585]
+Sun Sep 17 18:11:56 CEST 2017 finished, res_training/deu/war_wahr
