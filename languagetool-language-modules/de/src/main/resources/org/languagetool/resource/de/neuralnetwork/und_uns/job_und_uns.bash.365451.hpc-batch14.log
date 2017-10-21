@@ -1,0 +1,29 @@
+Thu Oct 19 14:16:38 CEST 2017 create_training_files
+/tmp/und_uns
+787348 lines
+766300 und
+32430 uns
+/tmp/und_uns_training
+629879 lines
+613055 und
+25909 uns
+/tmp/und_uns_validate
+157469 lines
+153245 und
+6521 uns
+generate /tmp/und_uns_training.py, /tmp/und_uns_validate.py
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:createNGramDatabase
+Reading /tmp/und_uns_training
+Tokenizing
+:createNGramDatabase FAILED
+
+BUILD FAILED
+
+Total time: 2 mins 55.056 secs
+Thu Oct 19 14:20:10 CEST 2017 create_classifier
+{'training_data_file': '/tmp/und_uns_training.py', 'num_inputs': 4, 'use_flex_hidden_layer': False, 'epochs': 3000, 'dictionary_path': 'res_training/deu/embedding/dictionary.txt', 'embedding_path': 'res_training/deu/embedding/final_embeddings.txt', 'self': <__main__.NeuralNetwork object at 0x2b58c40b8a58>, 'batch_size': 1000, 'num_outputs': 2}
+embedding shape (52520, 64)
+Thu Oct 19 14:20:24 CEST 2017 finished, res_training/deu/und_uns
