@@ -1,0 +1,32 @@
+Sun Oct 22 14:58:27 CEST 2017 create_training_files
+/tmp/Australia_Austria
+3492 lines
+2781 Australia
+716 Austria
+/tmp/Australia_Austria_training
+2794 lines
+2216 Australia
+582 Austria
+/tmp/Australia_Austria_validate
+698 lines
+565 Australia
+134 Austria
+generate /tmp/Australia_Austria_training.py, /tmp/Australia_Austria_validate.py
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:createNGramDatabase
+Reading /tmp/Australia_Austria_training
+Tokenizing
+undersampling to 611
+/tmp/Australia_Austria_training.pycreated
+Reading /tmp/Australia_Austria_validate
+Tokenizing
+undersampling to 143
+/tmp/Australia_Austria_validate.pycreated
+
+BUILD SUCCESSFUL
+
+Total time: 5.223 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html

@@ -1,0 +1,345 @@
+Sun Oct 22 15:02:43 CEST 2017 create_training_files
+/tmp/Australia_Austria
+3492 lines
+2781 Australia
+716 Austria
+/tmp/Australia_Austria_training
+2794 lines
+2208 Australia
+590 Austria
+/tmp/Australia_Austria_validate
+698 lines
+573 Australia
+126 Austria
+generate /tmp/Australia_Austria_training.py, /tmp/Australia_Austria_validate.py
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:createNGramDatabase
+Reading /tmp/Australia_Austria_training
+Tokenizing
+undersampling to 625
+/tmp/Australia_Austria_training.pycreated
+Reading /tmp/Australia_Austria_validate
+Tokenizing
+undersampling to 129
+/tmp/Australia_Austria_validate.pycreated
+
+BUILD SUCCESSFUL
+
+Total time: 5.823 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+Sun Oct 22 15:02:54 CEST 2017 create_classifier
+{'num_outputs': 2, 'embedding_path': 'res_training/eng/embedding/final_embeddings.txt', 'use_flex_hidden_layer': False, 'dictionary_path': 'res_training/eng/embedding/dictionary.txt', 'batch_size': 1000, 'epochs': 3000, 'num_inputs': 4, 'self': <__main__.NeuralNetwork object at 0x2b29d77aca20>, 'training_data_file': '/tmp/Australia_Austria_training.py'}
+embedding shape (42122, 64)
+/tmp/Australia_Austria_training.py loaded, containing 1250 entries, class distribution: [625 625]
+Steps: 3000, 1 steps in 3000 epochs
+epoch 0, training accuracy 0.516800
+epoch 10, training accuracy 0.520800
+epoch 20, training accuracy 0.524000
+epoch 30, training accuracy 0.522400
+epoch 40, training accuracy 0.523200
+epoch 50, training accuracy 0.528000
+epoch 60, training accuracy 0.535200
+epoch 70, training accuracy 0.539200
+epoch 80, training accuracy 0.545600
+epoch 90, training accuracy 0.544800
+epoch 100, training accuracy 0.549600
+epoch 110, training accuracy 0.557600
+epoch 120, training accuracy 0.561600
+epoch 130, training accuracy 0.564000
+epoch 140, training accuracy 0.568000
+epoch 150, training accuracy 0.572000
+epoch 160, training accuracy 0.576800
+epoch 170, training accuracy 0.579200
+epoch 180, training accuracy 0.580800
+epoch 190, training accuracy 0.584800
+epoch 200, training accuracy 0.586400
+epoch 210, training accuracy 0.588800
+epoch 220, training accuracy 0.590400
+epoch 230, training accuracy 0.592800
+epoch 240, training accuracy 0.593600
+epoch 250, training accuracy 0.595200
+epoch 260, training accuracy 0.600000
+epoch 270, training accuracy 0.602400
+epoch 280, training accuracy 0.603200
+epoch 290, training accuracy 0.604800
+epoch 300, training accuracy 0.608000
+epoch 310, training accuracy 0.610400
+epoch 320, training accuracy 0.611200
+epoch 330, training accuracy 0.612800
+epoch 340, training accuracy 0.616800
+epoch 350, training accuracy 0.620800
+epoch 360, training accuracy 0.626400
+epoch 370, training accuracy 0.627200
+epoch 380, training accuracy 0.629600
+epoch 390, training accuracy 0.631200
+epoch 400, training accuracy 0.632800
+epoch 410, training accuracy 0.633600
+epoch 420, training accuracy 0.636800
+epoch 430, training accuracy 0.641600
+epoch 440, training accuracy 0.643200
+epoch 450, training accuracy 0.647200
+epoch 460, training accuracy 0.649600
+epoch 470, training accuracy 0.649600
+epoch 480, training accuracy 0.650400
+epoch 490, training accuracy 0.650400
+epoch 500, training accuracy 0.652000
+epoch 510, training accuracy 0.652000
+epoch 520, training accuracy 0.655200
+epoch 530, training accuracy 0.655200
+epoch 540, training accuracy 0.656000
+epoch 550, training accuracy 0.655200
+epoch 560, training accuracy 0.661600
+epoch 570, training accuracy 0.664000
+epoch 580, training accuracy 0.667200
+epoch 590, training accuracy 0.668000
+epoch 600, training accuracy 0.668000
+epoch 610, training accuracy 0.669600
+epoch 620, training accuracy 0.670400
+epoch 630, training accuracy 0.672800
+epoch 640, training accuracy 0.675200
+epoch 650, training accuracy 0.677600
+epoch 660, training accuracy 0.678400
+epoch 670, training accuracy 0.679200
+epoch 680, training accuracy 0.683200
+epoch 690, training accuracy 0.684800
+epoch 700, training accuracy 0.686400
+epoch 710, training accuracy 0.687200
+epoch 720, training accuracy 0.687200
+epoch 730, training accuracy 0.688000
+epoch 740, training accuracy 0.692000
+epoch 750, training accuracy 0.691200
+epoch 760, training accuracy 0.692000
+epoch 770, training accuracy 0.693600
+epoch 780, training accuracy 0.694400
+epoch 790, training accuracy 0.695200
+epoch 800, training accuracy 0.696800
+epoch 810, training accuracy 0.699200
+epoch 820, training accuracy 0.700000
+epoch 830, training accuracy 0.700800
+epoch 840, training accuracy 0.702400
+epoch 850, training accuracy 0.703200
+epoch 860, training accuracy 0.704800
+epoch 870, training accuracy 0.704800
+epoch 880, training accuracy 0.704800
+epoch 890, training accuracy 0.704800
+epoch 900, training accuracy 0.704000
+epoch 910, training accuracy 0.702400
+epoch 920, training accuracy 0.700000
+epoch 930, training accuracy 0.700000
+epoch 940, training accuracy 0.700000
+epoch 950, training accuracy 0.699200
+epoch 960, training accuracy 0.699200
+epoch 970, training accuracy 0.700800
+epoch 980, training accuracy 0.700000
+epoch 990, training accuracy 0.699200
+epoch 1000, training accuracy 0.699200
+epoch 1010, training accuracy 0.697600
+epoch 1020, training accuracy 0.697600
+epoch 1030, training accuracy 0.699200
+epoch 1040, training accuracy 0.699200
+epoch 1050, training accuracy 0.700000
+epoch 1060, training accuracy 0.700800
+epoch 1070, training accuracy 0.700000
+epoch 1080, training accuracy 0.700800
+epoch 1090, training accuracy 0.701600
+epoch 1100, training accuracy 0.701600
+epoch 1110, training accuracy 0.702400
+epoch 1120, training accuracy 0.703200
+epoch 1130, training accuracy 0.703200
+epoch 1140, training accuracy 0.704000
+epoch 1150, training accuracy 0.706400
+epoch 1160, training accuracy 0.707200
+epoch 1170, training accuracy 0.707200
+epoch 1180, training accuracy 0.707200
+epoch 1190, training accuracy 0.708800
+epoch 1200, training accuracy 0.708800
+epoch 1210, training accuracy 0.708800
+epoch 1220, training accuracy 0.711200
+epoch 1230, training accuracy 0.711200
+epoch 1240, training accuracy 0.709600
+epoch 1250, training accuracy 0.712000
+epoch 1260, training accuracy 0.712800
+epoch 1270, training accuracy 0.714400
+epoch 1280, training accuracy 0.716000
+epoch 1290, training accuracy 0.716800
+epoch 1300, training accuracy 0.718400
+epoch 1310, training accuracy 0.718400
+epoch 1320, training accuracy 0.718400
+epoch 1330, training accuracy 0.718400
+epoch 1340, training accuracy 0.721600
+epoch 1350, training accuracy 0.721600
+epoch 1360, training accuracy 0.721600
+epoch 1370, training accuracy 0.721600
+epoch 1380, training accuracy 0.721600
+epoch 1390, training accuracy 0.722400
+epoch 1400, training accuracy 0.724800
+epoch 1410, training accuracy 0.724800
+epoch 1420, training accuracy 0.725600
+epoch 1430, training accuracy 0.725600
+epoch 1440, training accuracy 0.724800
+epoch 1450, training accuracy 0.725600
+epoch 1460, training accuracy 0.725600
+epoch 1470, training accuracy 0.726400
+epoch 1480, training accuracy 0.725600
+epoch 1490, training accuracy 0.725600
+epoch 1500, training accuracy 0.726400
+epoch 1510, training accuracy 0.726400
+epoch 1520, training accuracy 0.726400
+epoch 1530, training accuracy 0.724800
+epoch 1540, training accuracy 0.724000
+epoch 1550, training accuracy 0.724000
+epoch 1560, training accuracy 0.724800
+epoch 1570, training accuracy 0.726400
+epoch 1580, training accuracy 0.728800
+epoch 1590, training accuracy 0.728800
+epoch 1600, training accuracy 0.728000
+epoch 1610, training accuracy 0.728800
+epoch 1620, training accuracy 0.739200
+epoch 1630, training accuracy 0.740000
+epoch 1640, training accuracy 0.740000
+epoch 1650, training accuracy 0.740000
+epoch 1660, training accuracy 0.740800
+epoch 1670, training accuracy 0.740000
+epoch 1680, training accuracy 0.740000
+epoch 1690, training accuracy 0.741600
+epoch 1700, training accuracy 0.741600
+epoch 1710, training accuracy 0.741600
+epoch 1720, training accuracy 0.741600
+epoch 1730, training accuracy 0.741600
+epoch 1740, training accuracy 0.740800
+epoch 1750, training accuracy 0.741600
+epoch 1760, training accuracy 0.741600
+epoch 1770, training accuracy 0.740800
+epoch 1780, training accuracy 0.740800
+epoch 1790, training accuracy 0.742400
+epoch 1800, training accuracy 0.742400
+epoch 1810, training accuracy 0.742400
+epoch 1820, training accuracy 0.744000
+epoch 1830, training accuracy 0.744000
+epoch 1840, training accuracy 0.744000
+epoch 1850, training accuracy 0.744000
+epoch 1860, training accuracy 0.744800
+epoch 1870, training accuracy 0.745600
+epoch 1880, training accuracy 0.745600
+epoch 1890, training accuracy 0.745600
+epoch 1900, training accuracy 0.745600
+epoch 1910, training accuracy 0.745600
+epoch 1920, training accuracy 0.745600
+epoch 1930, training accuracy 0.747200
+epoch 1940, training accuracy 0.749600
+epoch 1950, training accuracy 0.749600
+epoch 1960, training accuracy 0.750400
+epoch 1970, training accuracy 0.749600
+epoch 1980, training accuracy 0.749600
+epoch 1990, training accuracy 0.752000
+epoch 2000, training accuracy 0.752000
+epoch 2010, training accuracy 0.752000
+epoch 2020, training accuracy 0.752800
+epoch 2030, training accuracy 0.752800
+epoch 2040, training accuracy 0.752800
+epoch 2050, training accuracy 0.753600
+epoch 2060, training accuracy 0.753600
+epoch 2070, training accuracy 0.754400
+epoch 2080, training accuracy 0.754400
+epoch 2090, training accuracy 0.755200
+epoch 2100, training accuracy 0.756000
+epoch 2110, training accuracy 0.756000
+epoch 2120, training accuracy 0.756800
+epoch 2130, training accuracy 0.756800
+epoch 2140, training accuracy 0.758400
+epoch 2150, training accuracy 0.757600
+epoch 2160, training accuracy 0.758400
+epoch 2170, training accuracy 0.758400
+epoch 2180, training accuracy 0.758400
+epoch 2190, training accuracy 0.758400
+epoch 2200, training accuracy 0.758400
+epoch 2210, training accuracy 0.758400
+epoch 2220, training accuracy 0.758400
+epoch 2230, training accuracy 0.758400
+epoch 2240, training accuracy 0.760000
+epoch 2250, training accuracy 0.760000
+epoch 2260, training accuracy 0.760000
+epoch 2270, training accuracy 0.760000
+epoch 2280, training accuracy 0.760800
+epoch 2290, training accuracy 0.760000
+epoch 2300, training accuracy 0.760800
+epoch 2310, training accuracy 0.760800
+epoch 2320, training accuracy 0.760800
+epoch 2330, training accuracy 0.761600
+epoch 2340, training accuracy 0.760800
+epoch 2350, training accuracy 0.758400
+epoch 2360, training accuracy 0.758400
+epoch 2370, training accuracy 0.759200
+epoch 2380, training accuracy 0.759200
+epoch 2390, training accuracy 0.759200
+epoch 2400, training accuracy 0.759200
+epoch 2410, training accuracy 0.759200
+epoch 2420, training accuracy 0.759200
+epoch 2430, training accuracy 0.759200
+epoch 2440, training accuracy 0.760800
+epoch 2450, training accuracy 0.760800
+epoch 2460, training accuracy 0.760800
+epoch 2470, training accuracy 0.760800
+epoch 2480, training accuracy 0.763200
+epoch 2490, training accuracy 0.763200
+epoch 2500, training accuracy 0.764800
+epoch 2510, training accuracy 0.764800
+epoch 2520, training accuracy 0.764800
+epoch 2530, training accuracy 0.764800
+epoch 2540, training accuracy 0.764800
+epoch 2550, training accuracy 0.765600
+epoch 2560, training accuracy 0.765600
+epoch 2570, training accuracy 0.765600
+epoch 2580, training accuracy 0.764800
+epoch 2590, training accuracy 0.764800
+epoch 2600, training accuracy 0.764800
+epoch 2610, training accuracy 0.766400
+epoch 2620, training accuracy 0.767200
+epoch 2630, training accuracy 0.768800
+epoch 2640, training accuracy 0.769600
+epoch 2650, training accuracy 0.768000
+epoch 2660, training accuracy 0.768800
+epoch 2670, training accuracy 0.768800
+epoch 2680, training accuracy 0.768800
+epoch 2690, training accuracy 0.769600
+epoch 2700, training accuracy 0.769600
+epoch 2710, training accuracy 0.769600
+epoch 2720, training accuracy 0.769600
+epoch 2730, training accuracy 0.769600
+epoch 2740, training accuracy 0.769600
+epoch 2750, training accuracy 0.769600
+epoch 2760, training accuracy 0.770400
+epoch 2770, training accuracy 0.770400
+epoch 2780, training accuracy 0.770400
+epoch 2790, training accuracy 0.770400
+epoch 2800, training accuracy 0.771200
+epoch 2810, training accuracy 0.771200
+epoch 2820, training accuracy 0.770400
+epoch 2830, training accuracy 0.769600
+epoch 2840, training accuracy 0.769600
+epoch 2850, training accuracy 0.769600
+epoch 2860, training accuracy 0.771200
+epoch 2870, training accuracy 0.772000
+epoch 2880, training accuracy 0.772000
+epoch 2890, training accuracy 0.772800
+epoch 2900, training accuracy 0.772800
+epoch 2910, training accuracy 0.774400
+epoch 2920, training accuracy 0.774400
+epoch 2930, training accuracy 0.772800
+epoch 2940, training accuracy 0.772800
+epoch 2950, training accuracy 0.772800
+epoch 2960, training accuracy 0.772800
+epoch 2970, training accuracy 0.772800
+epoch 2980, training accuracy 0.772800
+epoch 2990, training accuracy 0.772800
+epoch 3000, training accuracy 0.772800
+/tmp/Australia_Austria_validate.py loaded, containing 258 entries, class distribution: [129 129]
+correct: [35, 45]
+incorrect: [9, 17]
+accuracy: [0.7954545454545454, 0.7258064516129032]
+unclassified: [85, 67]
+total accuracy: [0.2713178294573643, 0.3488372093023256]
+Sun Oct 22 15:03:16 CEST 2017 finished, res_training/eng/Australia_Austria
